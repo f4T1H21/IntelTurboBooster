@@ -1,8 +1,8 @@
+#!/bin/bash
 ######                       ب                        #######
 ## Intel® Turbo Boost and clock speed editor script by f4T1H.
 ## See https://github.com/f4T1H21/IntelTurboBooster
 ## Constructive feedback is appreciated.
-#!/bin/bash
 if [[ $EUID -ne 0 ]]; then
     echo "This script must be run as root."
     exit 1
@@ -35,7 +35,7 @@ ${version}
 [!] Use at your own risk, I am not responsible for any malfunction.
 A script that makes it easier to change Intel® Turbo Boost settings and clock speed percentage.
 
-Usage: sudo bash booster.sh <MinPercentage> <MaxPercentage> [OPTIONS]
+Usage: sudo ./booster.sh <MinPercentage> <MaxPercentage> [OPTIONS]
 FLAGS:
     -h, --help      Print this help menu and exit.
     -v, --version   Print version information and exit.
@@ -46,9 +46,9 @@ ARGUMENTS:
     <MinPercentage> Set minimum CPU clock speed between %1 - %100.
     <MaxPercentage> Set maximum CPU clock speed between %1 - %100.
 EXAMPLES:
-    sudo bash booster.sh         # Show the current CPU clock speed and Turbo Boost status.
-    sudo bash booster.sh 50 100  # Set CPU to run at a min of %50 to a max of %100 of its capacity.
-    sudo bash booster.sh 30 70 e # Set CPU to run at a min of %30 to a max of %70 of its capacity, enable Turbo Boost.
+    sudo ./booster.sh         # Show the current CPU clock speed and Turbo Boost status.
+    sudo ./booster.sh 50 100  # Set CPU to run at a min of %50 to a max of %100 of its capacity.
+    sudo ./booster.sh 30 70 e # Set CPU to run at a min of %30 to a max of %70 of its capacity, enable Turbo Boost.
 EOS
 read -d '' error <<- EOS # The error string for handling hardware errors.
 .....................................................................................
@@ -96,8 +96,8 @@ EOS
 
 else
     cat - << EOS
-WRONG USAGE! "sudo bash booster.sh -h" for more information.
-Usage: sudo bash booster.sh <MinPercentage> <MaxPercentage> [OPTIONS]
+WRONG USAGE! "sudo ./booster.sh --help" for more information.
+Usage: sudo ./booster.sh <MinPercentage> <MaxPercentage> [OPTIONS]
 $version
 EOS
     exit 16
