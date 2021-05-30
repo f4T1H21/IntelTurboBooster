@@ -16,7 +16,7 @@ ${version}
 Your system either doesn't have intel_pstate directory or there are files missing in intel_pstate.
 The default location for intel_pstate is: /sys/devices/system/cpu/intel_pstate/
 If it exist but not in its default directory, please change the directory location inside the code.
-[i] See https://github.com/f4T1H21/IntelTurboBooster for more information
+[i] See https://github.com/f4T1H21/IntelTurboBooster for more information.
 ...................................................................................................
 EOS
     exit 16
