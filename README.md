@@ -6,12 +6,9 @@
 **Use this script at your own risk! I am not responsible for any malfunction on your system!**
 
 ### Attention
-- Make sure you enabled Intel Turbo Boost Technology from BIOS.
 - Make sure your CPU model is supporting Turbo Boost Technology.
-- Make sure you have /sys/devices/system/cpu/intel_pstate/ directory on your system.
-  - If you don't have but you sure your CPU supports Turbo Boost Technology?
-  - Then you need to change the default [directory](https://github.com/f4T1H21/IntelTurboBooster/blob/a6036b3af70ed13c70aab08833375d2f4d91e9bb/booster.sh#L10) in the code with yours.
-- **This script must be run with root privileges!**
+- Make sure you enabled Intel Turbo Boost Technology from BIOS.
+- Make sure you're running this script with root privileges.
 ### Getting Started
 ```bash
 git clone https://github.com/f4T1H21/IntelTurboBooster.git
