@@ -14,12 +14,11 @@
 git clone https://github.com/f4T1H21/IntelTurboBooster.git
 cd IntelTurboBooster
 chmod +x booster.sh
-sudo bash ./booster.sh --help
+sudo ./booster.sh --help
 ```
-
 ### Usage
 ```
-Usage: sudo bash booster.sh <MinPercentage> <MaxPercentage> [OPTIONS]
+Usage: sudo ./booster.sh <MinPercentage> <MaxPercentage> [OPTIONS]
 FLAGS:
     -h, --help      Print this help menu and exit.
     -v, --version   Print version information and exit.
@@ -30,9 +29,9 @@ ARGUMENTS:
     <MinPercentage> Set minimum CPU clock speed between %1 - %100.
     <MaxPercentage> Set maximum CPU clock speed between %1 - %100.
 EXAMPLES:
-    sudo bash booster.sh         # Show the current CPU clock speed and Turbo Boost status.
-    sudo bash booster.sh 50 100  # Set CPU to run at a min of %50 to a max of %100 of its capacity.
-    sudo bash booster.sh 30 70 e # Set CPU to run at a min of %30 to a max of %70 of its capacity, enable Turbo Boost.
+    sudo ./booster.sh         # Show the current CPU clock speed and Turbo Boost status.
+    sudo ./booster.sh 50 100  # Set CPU to run at a min of %50 to a max of %100 of its capacity.
+    sudo ./booster.sh 30 70 e # Set CPU to run at a min of %30 to a max of %70 of its capacity, enable Turbo Boost.
 ```
 ### Example ss (PoC)
 ![poc](https://github.com/f4T1H21/IntelTurboBooster/blob/main/src/poc.png)
