@@ -1,5 +1,5 @@
 # IntelTurboBooster
-*A script that makes it easier to change Intel® CPU's Turbo Boost settings and clock speed.*
+*A tool that makes it easier to change Intel® CPU's Turbo Boost settings and clock speed.*
 ### DISCLAIMER
 **This script is only for Intel® CPUs not any other!**
 
